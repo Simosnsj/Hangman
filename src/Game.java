@@ -11,7 +11,8 @@ public class Game {
 
 	public static void setInstances(int instances) {
 		Game.instances = instances;
-	}
+		//ska göra så att bara en instance kan finnas
+		}
 
 
 }
