@@ -1,7 +1,17 @@
 
 public class Game {
 
-	public void Start() {
+	public Game start;
+	
+	private static int instances = 0;
+
+	public static int getInstances() {
+		return instances;
 	}
+
+	public static void setInstances(int instances) {
+		Game.instances = instances;
+	}
+
 
 }
