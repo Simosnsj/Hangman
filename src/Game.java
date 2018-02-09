@@ -1,18 +1,12 @@
+import java.util.Scanner;
 
 public class Game {
 
-	public Game start;
-	
-	private static int instances = 0;
-
-	public static int getInstances() {
-		return instances;
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+		
+		
+		
+		
 	}
-
-	public static void setInstances(int instances) {
-		Game.instances = instances;
-		//ska göra så att bara en instance kan finnas
-		}
-
-
 }
