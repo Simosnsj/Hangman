@@ -45,74 +45,120 @@ public class Hangman {
 	}
 	
 	private void lifeDisplay() {
-		
-	
-		System.out.println("*****   *****");
-		System.out.println("*****  _____*****");
-		System.out.println("*****  |/  *|****");
-		System.out.println("*****  | *****");
-		System.out.println("*****  |  ***");
+	if(liv = 434) {
+		System.out.println("***************");
+		System.out.println("***************");
+		System.out.println("***************");
+		System.out.println("***************");
+		System.out.println("***************");
+		System.out.println("***** ____  ***");
+		System.out.println("*****/****\****");
+		System.out.println("****/______\  *");
+	}
+	else if() {
+		System.out.println("***************");
+		System.out.println("***************");
+		System.out.println("*****  |  *****");
+		System.out.println("*****  | ******");
+		System.out.println("*****  |  *****");
 		System.out.println("***** _|__  ***");
 		System.out.println("**** /    \****");
 		System.out.println("****/______\  *");
-		
-		System.out.println("*****   *****");
-		System.out.println("*****  _____*****");
-		System.out.println("*****  |/  *|****");
-		System.out.println("*****  | ***O**");
-		System.out.println("*****  |  ***");
+	}
+	else if() {
+		System.out.println("***************");
+		System.out.println("*****  _____***");
+		System.out.println("*****  |  *****");
+		System.out.println("*****  | ******");
+		System.out.println("*****  |  *****");
 		System.out.println("***** _|__  ***");
 		System.out.println("**** /    \****");
 		System.out.println("****/______\  *");
-		
-		System.out.println("*****   *****");
-		System.out.println("*****  _____*****");
-		System.out.println("*****  |/  *|****");
-		System.out.println("*****  | ***O**");
-		System.out.println("*****  |  *  )**");
+	}
+	else if() {
+		System.out.println("***************");
+		System.out.println("*****  _____***");
+		System.out.println("*****  |/  ****");
+		System.out.println("*****  | ******");
+		System.out.println("*****  |  *****");
+		System.out.println("***** _|__  ***");
+		System.out.println("**** /    \****");
+		System.out.println("****/______\  *");	
+	}
+	else if() {
+		System.out.println("*****   *******");
+		System.out.println("*****  _____***");
+		System.out.println("*****  |/  *|**");
+		System.out.println("*****  | ******");
+		System.out.println("*****  |  *****");
 		System.out.println("***** _|__  ***");
 		System.out.println("**** /    \****");
 		System.out.println("****/______\  *");
-		
-		System.out.println("*****  _____*****");
-		System.out.println("*****  |/  *|****");
+	}
+	else if() {
+		System.out.println("*****   *******");
+		System.out.println("*****  _____***");
+		System.out.println("*****  |/  *|**");
 		System.out.println("*****  | ***O**");
-		System.out.println("*****  |  *( )**");
-		System.out.println("***** _|__   ***");
-		System.out.println("**** /    \****");
-		System.out.println("****/______\  *");
-		
-		System.out.println("*****  _____*****");
-		System.out.println("*****  |/  *|****");
-		System.out.println("*****  | ***O**");
-		System.out.println("*****  |  /( )**");
+		System.out.println("*****  |  *****");
 		System.out.println("***** _|__  ***");
 		System.out.println("**** /    \****");
 		System.out.println("****/______\  *");
-		
+	}
+	else if() {
+		System.out.println("*****   *******");
+		System.out.println("*****  _____***");
+		System.out.println("*****  |/  *|**");
+		System.out.println("*****  | ***O**");
+		System.out.println("*****  |  *  )*");
+		System.out.println("***** _|__  ***");
+		System.out.println("**** /    \****");
+		System.out.println("****/______\  *");
+	}
+	else if() {
+		System.out.println("*****  _____***");
+		System.out.println("*****  |/  *|**");
+		System.out.println("*****  | ***O**");
+		System.out.println("*****  |  *( )*");
+		System.out.println("***** _|__   **");
+		System.out.println("**** /    \****");
+		System.out.println("****/______\  *");
+	}
+	else if() {
 		System.out.println("*****  _____*****");
 		System.out.println("*****  |/  *|****");
-		System.out.println("*****  | ***O**");
+		System.out.println("*****  | ***O****");
+		System.out.println("*****  |  /( )***");
+		System.out.println("***** _|__  *****");
+		System.out.println("**** /    \******");
+		System.out.println("****/______\  ***");
+	}
+	else if() {
+		System.out.println("*****  _____*****");
+		System.out.println("*****  |/  *|****");
+		System.out.println("*****  | ***O****");
 		System.out.println("*****  |  /( )\**");
-		System.out.println("***** _|__  ***");
-		System.out.println("**** /    \****");
-		System.out.println("****/______\  *");
-		
+		System.out.println("***** _|__  *****");
+		System.out.println("**** /    \******");
+		System.out.println("****/______\  ***");
+	}
+	else if() {	
 		System.out.println("*****  _____*****");
 		System.out.println("*****  |/  *|****");
-		System.out.println("*****  | ***O**");
+		System.out.println("*****  | ***O****");
 		System.out.println("*****  |  /( )\**");
-		System.out.println("***** _|__ / ***");
-		System.out.println("**** /    \****");
-		System.out.println("****/______\  *");
-		
+		System.out.println("***** _|__ / ****");
+		System.out.println("**** /    \******");
+		System.out.println("****/______\  ***");
+	}
+	else if() {	
 		System.out.println("*****  _____*****");
 		System.out.println("*****  |/  *|****");
-		System.out.println("*****  | ***O**");
+		System.out.println("*****  | ***O****");
 		System.out.println("*****  |  /( )\**");
 		System.out.println("***** _|__ / \***");
-		System.out.println("**** /    \****");
-		System.out.println("****/______\  *");
+		System.out.println("**** /    \******");
+		System.out.println("****/______\  ***");
 		
 		
 		
@@ -120,6 +166,10 @@ public class Hangman {
 		
 		
 	}
-
+	
+	}
+	
 }
+
+
 
