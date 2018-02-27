@@ -40,6 +40,8 @@ public class Hangman {
 	public void loseLiv() {
 		liv--;
 		
+		
+		
 	}
 	
 	private void lifeDisplay() {
