@@ -12,7 +12,7 @@ public class Game {
 		
 		gameInstance.setDifficulty(sc.nextInt());
 
-		
+		Secret word = new Secret;
 		
 		sc.close();
 		

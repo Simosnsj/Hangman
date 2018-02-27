@@ -26,7 +26,7 @@ public class Hangman {
 		}
 		else if(i ==3) {
 			System.out.println("Du har valt svår svårighetsgrad");
-			liv = 7;
+			liv = 8;
 		}
 		else {
 			System.out.println("index out of bounds");
@@ -51,5 +51,10 @@ public class Hangman {
 		
 	}
 
+	
+	
+	
+	
+	
 }
 
