@@ -46,6 +46,74 @@ public class Hangman {
 	
 	private void lifeDisplay() {
 		
+	
+		System.out.println("*****   *****");
+		System.out.println("*****  _____*****");
+		System.out.println("*****  |/  *|****");
+		System.out.println("*****  | *****");
+		System.out.println("*****  |  ***");
+		System.out.println("***** _|__  ***");
+		System.out.println("**** /    \****");
+		System.out.println("****/______\  *");
+		
+		System.out.println("*****   *****");
+		System.out.println("*****  _____*****");
+		System.out.println("*****  |/  *|****");
+		System.out.println("*****  | ***O**");
+		System.out.println("*****  |  ***");
+		System.out.println("***** _|__  ***");
+		System.out.println("**** /    \****");
+		System.out.println("****/______\  *");
+		
+		System.out.println("*****   *****");
+		System.out.println("*****  _____*****");
+		System.out.println("*****  |/  *|****");
+		System.out.println("*****  | ***O**");
+		System.out.println("*****  |  *  )**");
+		System.out.println("***** _|__  ***");
+		System.out.println("**** /    \****");
+		System.out.println("****/______\  *");
+		
+		System.out.println("*****  _____*****");
+		System.out.println("*****  |/  *|****");
+		System.out.println("*****  | ***O**");
+		System.out.println("*****  |  *( )**");
+		System.out.println("***** _|__   ***");
+		System.out.println("**** /    \****");
+		System.out.println("****/______\  *");
+		
+		System.out.println("*****  _____*****");
+		System.out.println("*****  |/  *|****");
+		System.out.println("*****  | ***O**");
+		System.out.println("*****  |  /( )**");
+		System.out.println("***** _|__  ***");
+		System.out.println("**** /    \****");
+		System.out.println("****/______\  *");
+		
+		System.out.println("*****  _____*****");
+		System.out.println("*****  |/  *|****");
+		System.out.println("*****  | ***O**");
+		System.out.println("*****  |  /( )\**");
+		System.out.println("***** _|__  ***");
+		System.out.println("**** /    \****");
+		System.out.println("****/______\  *");
+		
+		System.out.println("*****  _____*****");
+		System.out.println("*****  |/  *|****");
+		System.out.println("*****  | ***O**");
+		System.out.println("*****  |  /( )\**");
+		System.out.println("***** _|__ / ***");
+		System.out.println("**** /    \****");
+		System.out.println("****/______\  *");
+		
+		System.out.println("*****  _____*****");
+		System.out.println("*****  |/  *|****");
+		System.out.println("*****  | ***O**");
+		System.out.println("*****  |  /( )\**");
+		System.out.println("***** _|__ / \***");
+		System.out.println("**** /    \****");
+		System.out.println("****/______\  *");
+		
 		
 		
 		
