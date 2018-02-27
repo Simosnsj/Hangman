@@ -3,13 +3,13 @@ public class Hangman {
 
 	private int liv;
 	
+	public Hangman() {
+		
+	}
+	
 	public void setDifficulty(int i) {
 		
-		if(liv == null) {
 			Difficulty(i);
-		}
-		else
-		
 		
 	}
 	
