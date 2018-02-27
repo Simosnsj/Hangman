@@ -12,6 +12,8 @@ public class Game {
 		
 		gameInstance.setDifficulty(sc.nextInt());
 
+		
+		
 		sc.close();
 		
 	}

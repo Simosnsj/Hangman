@@ -42,5 +42,14 @@ public class Hangman {
 		
 	}
 	
+	private void lifeDisplay() {
+		
+		
+		
+		
+		
+		
+	}
+
 }
 
