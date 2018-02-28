@@ -10,13 +10,12 @@ public class Secret {
 
 	public Secret() throws FileNotFoundException {
 		newSecret();
-		sequence();
 	}
 
 	private void newSecret() throws FileNotFoundException {
 		ArrayList<String> words = new ArrayList<String>();
 
-		Scanner sc = new Scanner(new File("ord.text"));
+		Scanner sc = new Scanner(new File("ord.txt"));
 
 		for(int i = 0; sc.hasNextLine(); i++) {
 			words.add(sc.nextLine());
@@ -35,7 +34,7 @@ public class Secret {
 
 
 	public boolean guess(char c) {
-
+//gör for loop i game fil.
 		if(word.contains(""+c) && !gissningar.contains(c)) {
 			gissningar.add(c);
 			for(int x = 0 ; x<word.length() ; x++ ){
