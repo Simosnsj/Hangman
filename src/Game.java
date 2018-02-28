@@ -24,7 +24,8 @@ public class Game {
 		System.out.println("Du har förlorat");
 	}
 }
-
+// fixa så att man kan vinna!
+//fixa så att ordet skrivs eftersom! finns klart i guess men måste appliceras också
 // Fixa gubbarna som visar antal liv.
 //vill vi ha en ruta som kommer upp? jaok githut har exempel
 //fixa så att man inte kan skriva saker som är out of bounds!
