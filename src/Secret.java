@@ -4,24 +4,25 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Secret {
-	private ArrayList<String> words = new ArrayList<String>();
 	private String word;
 	private String secret;
+	
 	public Secret() throws FileNotFoundException {
 		newSecret();
 		sequence();
 	}
-	public void newSecret() throws FileNotFoundException {
+	
+	private void newSecret() throws FileNotFoundException {
+		ArrayList<String> words = new ArrayList<String>();
+
 		Scanner sc = new Scanner(new File("ord.text"));
 
 		for(int i = 0; sc.hasNextLine(); i++) {
 			words.add(sc.nextLine());
 
 		}
-		
-		
-		
-		String word = new String();
+		String word = words.get((int) (words.size() * Math.random()));
+				
 		this.word = word;
 		this.secret= new String();
 
@@ -40,9 +41,19 @@ public class Secret {
 
 
 	public boolean guess(char c) {
-
+		
 		if(word.contains(""+c)) {
-
+			
+			for(int x = 0; x<word.length();x++){
+				String temp ="" + word.charAt(x);
+				if(temp.equals(c)){
+					secret+= c;
+					}else{
+					secret +="";
+					}
+			}
+				
+			
 
 			return true;
 		}
@@ -50,6 +61,11 @@ public class Secret {
 		else{
 			return false;
 		}
+	}
+	private void charExchange() {
+		
+		
+		
 	}
 
 
