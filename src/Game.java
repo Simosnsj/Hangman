@@ -14,15 +14,14 @@ public class Game {
 		gameInstance.setDifficulty(sc.nextInt());
 
 		Secret word = new Secret();
-		
-		while(true) {
+		while(!(gameInstance.getLiv() == 0)) {
 			System.out.println("Gissa en bokstav");
 			if(!word.guess(sc.next().charAt(0))) {
 				gameInstance.loseLiv();
 			}
 			gameInstance.update();
 		}
-
+		System.out.println("Du har förlorat");
 	}
 }
 
