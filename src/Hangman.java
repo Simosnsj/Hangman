@@ -29,14 +29,14 @@ public class Hangman {
 			liv = 8;
 		}
 		else {
-			System.out.println("index out of bounds");
-
+			System.err.println("index out of bounds");
 		}	
 	}
 	public int getLiv(){
 		return liv;
 
 	}
+	
 	public void loseLiv() {
 		liv--;
 
@@ -47,7 +47,7 @@ public class Hangman {
 		lifeDisplay();
 	}
 	private void lifeDisplay() {
-
+ 
 		switch(this.liv) {
 		case 1:
 			System.out.println("liv: "+liv );   // blablabla om x = 1

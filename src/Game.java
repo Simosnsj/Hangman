@@ -15,7 +15,7 @@ public class Game {
 
 		Secret word = new Secret();
 		while(!(gameInstance.getLiv() == 0)) {
-			System.out.println("Gissa en bokstav");
+			System.out.println("Gissa en Char: ");
 			if(!word.guess(sc.next().charAt(0))) {
 				gameInstance.loseLiv();
 			}
@@ -25,4 +25,7 @@ public class Game {
 	}
 }
 
-//skapa uppdate metod
+// Fixa gubbarna som visar antal liv.
+//vill vi ha en ruta som kommer upp? jaok githut har exempel
+//fixa så att man inte kan skriva saker som är out of bounds!
+//t.ex svårighetsgrad med icke ints t.ex a*_b 
