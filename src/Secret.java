@@ -1,13 +1,15 @@
+import java.io.File;
 
 public class Secret {
 
 	private String word;
 	private String secret;
 	public Secret(int Liv) {
-		newSecret("hej");
+		newSecret();
 		sequence();
 	}
-	public void newSecret(String word) {
+	public void newSecret() {
+		string word = new File("ord.txt");
 		this.word = word;
 		this.secret="";
 		
@@ -19,7 +21,7 @@ public class Secret {
 	
 	public void sequence() {
 		
-		/*.charat*/
+		
 	
 	}
 	

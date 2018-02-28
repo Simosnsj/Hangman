@@ -12,7 +12,8 @@ public class Game {
 		
 		gameInstance.setDifficulty(sc.nextInt());
 
-		Secret word = new Secret(8);
+		Secret word = new Secret();
+		
 		if(!word.guess(sc.next().charAt(0))) {
 			gameInstance.loseLiv();
 		}
