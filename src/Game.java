@@ -14,7 +14,7 @@ public class Game {
 		gameInstance.setDifficulty(sc.next());
 
 		Secret word = new Secret();
-		while(!(gameInstance.getLiv() == 0 // || Secret.win=true???)) {
+		while(!(gameInstance.getLiv() == 0 /* || Secret.win=true???*/)) {
 			System.out.println("Gissa en Char: ");
 			if(!word.guess(sc.next().charAt(0))) {
 				gameInstance.loseLiv();
@@ -29,6 +29,7 @@ public class Game {
 //fixa så att ordet skrivs eftersom! finns klart i guess men måste appliceras också
 //fixa så att man inte kan skriva saker som är out of bounds!
 //t.ex svårighetsgrad med icke ints t.ex a*_b 
+//detta fixas med try/catch! fixas snart!
 
 
 // kan fixa om vi orkar:
