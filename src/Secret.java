@@ -33,8 +33,7 @@ public class Secret {
 	}
 
 
-	public boolean guess(char c) {
-//gör for loop i game fil.
+	public boolean guess(char c) { // fixa detta! måste returna boolean men den gör väl det?
 		if(word.contains(""+c) && !gissningar.contains(c)) {
 			gissningar.add(c);
 			for(int x = 0 ; x<word.length() ; x++ ){
@@ -44,13 +43,10 @@ public class Secret {
 				}
 				
 			}
-
+			for(int i = 0 ; i<secret.length ;i++ )
 			return true;
 		}
-
-		else{
 			return false;
-		}
 	}
 
 
