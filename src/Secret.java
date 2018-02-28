@@ -34,6 +34,8 @@ public class Secret {
 
 
 	public boolean guess(char c) { // fixa detta! måste returna boolean men den gör väl det?
+		
+		
 		if(word.contains(""+c) && !gissningar.contains(c)) {
 			gissningar.add(c);
 			for(int x = 0 ; x<word.length() ; x++ ){

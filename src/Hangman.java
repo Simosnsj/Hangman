@@ -29,6 +29,7 @@ public class Hangman {
 			liv = 8;
 		}
 		else {
+			
 			System.err.println("index out of bounds");
 		}	
 	}

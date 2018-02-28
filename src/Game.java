@@ -11,21 +11,21 @@ public class Game {
 
 		Hangman gameInstance = new Hangman();
 
-		gameInstance.setDifficulty(sc.nextInt());
+		gameInstance.setDifficulty(sc.next());
 
 		Secret word = new Secret();
-		while(!(gameInstance.getLiv() == 0)) {
+		while(!(gameInstance.getLiv() == 0 // || Secret.win=true???)) {
 			System.out.println("Gissa en Char: ");
 			if(!word.guess(sc.next().charAt(0))) {
 				gameInstance.loseLiv();
 			}
 			gameInstance.update();
 		}
-		System.out.println("Du har förlorat");
 	}
 }
 //måste fixa:
-// fixa så att man kan vinna!
+// fixa så att man kan vinna! kollar liv och ordet innan man gissar
+//göt en win metod i secret classen som kollar om det som ska skrivas ut innehåller _
 //fixa så att ordet skrivs eftersom! finns klart i guess men måste appliceras också
 //fixa så att man inte kan skriva saker som är out of bounds!
 //t.ex svårighetsgrad med icke ints t.ex a*_b 
