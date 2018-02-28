@@ -5,13 +5,14 @@ import java.util.Scanner;
 
 public class Secret {
 	private String word;
-	private String secret;
-	
+	private char[] secret;
+	private ArrayList<Character> gissningar = new ArrayList<Character>();
+
 	public Secret() throws FileNotFoundException {
 		newSecret();
 		sequence();
 	}
-	
+
 	private void newSecret() throws FileNotFoundException {
 		ArrayList<String> words = new ArrayList<String>();
 
@@ -22,38 +23,28 @@ public class Secret {
 
 		}
 		String word = words.get((int) (words.size() * Math.random()));
-				
+		word.toUpperCase();
 		this.word = word;
-		this.secret= new String();
+		this.secret= new char[word.length()];
 
 		for(int i = 0 ; i < word.length() ; i++) {
-			secret +="_";
+			secret[i] +='_';
 
 		}
 	}
 
-	public void sequence() {
-
-
-
-	}
-
-
 
 	public boolean guess(char c) {
-		
-		if(word.contains(""+c)) {
-			
-			for(int x = 0; x<word.length();x++){
-				String temp ="" + word.charAt(x);
+
+		if(word.contains(""+c) && !gissningar.contains(c)) {
+			gissningar.add(c);
+			for(int x = 0 ; x<word.length() ; x++ ){
+				String temp = "" + word.charAt(x);
 				if(temp.equals(c)){
-					secret+= c;
-					}else{
-					secret +="";
-					}
-			}
+					secret[x] += c;
+				}
 				
-			
+			}
 
 			return true;
 		}
@@ -61,11 +52,6 @@ public class Secret {
 		else{
 			return false;
 		}
-	}
-	private void charExchange() {
-		
-		
-		
 	}
 
 

@@ -44,12 +44,23 @@ public class Hangman {
 		
 	}
 	
-	private void lifeDisplay() {
+	private void lifeDisplay(int liv) {
 		
-		
-		
-		
-		
+		switch(liv) {
+		case 1:
+		          // blablabla om x = 1
+		break;
+
+		case 2:
+		  // Blblabla x = 2
+		break;
+
+		case 3: 
+		// blabla bla x = 3;
+		break;
+
+
+		}
 		
 	}
 
