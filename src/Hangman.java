@@ -46,6 +46,7 @@ public class Hangman {
 	}
 	public void update() {
 		lifeDisplay();
+		
 	}
 	private void lifeDisplay() {
  

@@ -33,8 +33,7 @@ public class Secret {
 	}
 
 
-	public boolean guess(char c) { // fixa detta! måste returna boolean men den gör väl det?
-		
+	public boolean guess(char c) { 
 		
 		if(word.contains(""+c) && !gissningar.contains(c)) {
 			gissningar.add(c);
@@ -42,6 +41,7 @@ public class Secret {
 				String temp = "" + word.charAt(x);
 				if(temp.equals(c)){
 					secret[x] += c;
+					//win(); kollar om ordet är rätt!
 				}
 				
 			}
