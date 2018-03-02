@@ -23,21 +23,27 @@ public class Game {
 			catch(Exception ex){
 				System.out.println("Fel, ogiltig input");
 				i = sc.next();
-				
+
 			}
 		}
 		Secret word = new Secret();
-		while(!(gameInstance.getLiv() == 0 /* || Secret.win=true???*/)) {
+		while(!(gameInstance.getLiv() == 0  || Secret.win() == true)) {
 			System.out.println("Gissa en Char: ");
-			if(!word.guess(sc.next().charAt(0))) {
+			if(!word.guess(sc.next().toUpperCase().charAt(0))) {
 				gameInstance.loseLiv();
 			}
 			gameInstance.update();
 		}
+
+		if (Secret.win() == true) {
+			System.out.println("Du vann!");
+		}
+
+
+
 	}
 }
 //måste fixa:
-// fixa så att man kan vinna! kollar liv och ordet innan man gissar
 //göt en win metod i secret classen som kollar om det som ska skrivas ut innehåller _
 //fixa så att ordet skrivs eftersom! finns klart i guess men måste appliceras också
 

@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Secret {
-	private String word;
-	private char[] secret;
+	private static String word;
+	private static char[] secret;
 	private ArrayList<Character> gissningar = new ArrayList<Character>();
 
 	public Secret() throws FileNotFoundException {
@@ -33,25 +33,53 @@ public class Secret {
 	}
 
 
-	public boolean guess(char c) { 
+	public boolean guess(char guess) {
 		
-		if(word.contains(""+c) && !gissningar.contains(c)) {
-			gissningar.add(c);
-			for(int x = 0 ; x<word.length() ; x++ ){
-				String temp = "" + word.charAt(x);
-				if(temp.equals(c)){
-					secret[x] += c;
-					//win(); kollar om ordet är rätt!
+		boolean state = false;
+
+		gissningar.add(guess);
+
+		if (word.contains("" + guess)) {
+
+			for (int i = 0; i < word.toCharArray().length; i++) {
+
+				if (word.toCharArray()[i] == guess) {
+					secret[i] = guess;
+
+					state = true;
+
 				}
-				
 			}
-			for(int i = 0 ; i<secret.length ;i++ )
+		}
+		for(int i = 0 ; i<secret.length ;i++ ) {
+			System.out.print(secret[i]);
+			System.out.print(" ");
+		}
+
+		System.out.println(gissningar);
+
+		if (state) {
 			return true;
 		}
-			return false;
+		return false;
+	}	
+
+
+	public static boolean win() {
+		String guessedWord = "";
+
+		for(char c : secret) guessedWord += c;
+
+		if (guessedWord.equals(word)) {
+
+			return true;
+
+		}
+
+		return false;
+
 	}
-
-
 }
+
 
 
