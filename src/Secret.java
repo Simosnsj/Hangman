@@ -3,6 +3,8 @@ import java.io.FileNotFoundException;
 import java.util.ArrayList;
 import java.util.Scanner;
 
+import javafx.scene.paint.Color;
+
 public class Secret {
 	private static String word;
 	private static char[] secret;
@@ -79,7 +81,10 @@ public class Secret {
 		return false;
 
 	}
+	
 }
+
+
 
 
 
